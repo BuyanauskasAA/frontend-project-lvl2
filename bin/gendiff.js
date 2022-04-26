@@ -9,4 +9,3 @@ program
   .argument('<filepath2>')
   .option('-f, --format <type>', 'output format')
   .parse();
-

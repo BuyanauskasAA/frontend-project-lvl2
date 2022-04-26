@@ -21,6 +21,9 @@
   },
   "homepage": "https://github.com/BuyanauskasAA/frontend-project-lvl2#readme",
   "dependencies": {
-    "commander": "^9.2.0"
+    "commander": "^9.2.0",
+    "eslint": "^8.14.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0"
   }
 }
