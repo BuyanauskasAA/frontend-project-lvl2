@@ -16,13 +16,11 @@ export default (filepath1, filepath2) => {
       acc.push(`  - ${key}: ${file1[key]}`);
     } else if (!keys1.includes(key)) {
       acc.push(`  + ${key}: ${file2[key]}`);
+    } else if (file1[key] === file2[key]) {
+      acc.push(`    ${key}: ${file1[key]}`);
     } else {
-      if (file1[key] === file2[key]) {
-        acc.push(`    ${key}: ${file1[key]}`)
-      } else {
-        acc.push(`  - ${key}: ${file1[key]}`);
-        acc.push(`  + ${key}: ${file2[key]}`);
-      } 
+      acc.push(`  - ${key}: ${file1[key]}`);
+      acc.push(`  + ${key}: ${file2[key]}`);
     }
 
     return acc;
