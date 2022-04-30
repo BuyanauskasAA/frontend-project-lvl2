@@ -4,3 +4,13 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/97bb01d1de371699da3a/maintainability)](https://codeclimate.com/github/BuyanauskasAA/frontend-project-lvl2/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/97bb01d1de371699da3a/test_coverage)](https://codeclimate.com/github/BuyanauskasAA/frontend-project-lvl2/test_coverage)
 
+## Setup
+
+```sh
+make install
+```
+
+## Example of using gendiff with .json format
+
+[![asciicast](https://asciinema.org/a/BzBZhKHhtQDy9XDz8iN9T2p90.svg)](https://asciinema.org/a/BzBZhKHhtQDy9XDz8iN9T2p90)
+
