@@ -23,4 +23,4 @@ test('generate difference .json', () => {
 
 test('generate difference .yaml', () => {
   expect(findDiff(yamlFilepath1, yamlFilepath2)).toEqual(expectedFile);
-})
+});
