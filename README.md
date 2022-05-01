@@ -10,7 +10,10 @@
 make install
 ```
 
-## Example of using gendiff with .json format
+## Example with .json
 
 [![asciicast](https://asciinema.org/a/BzBZhKHhtQDy9XDz8iN9T2p90.svg)](https://asciinema.org/a/BzBZhKHhtQDy9XDz8iN9T2p90)
 
+## Example with .yaml
+
+[![asciicast](https://asciinema.org/a/qiSy5Ckvsl045FSJk8DzfKIMx.svg)](https://asciinema.org/a/qiSy5Ckvsl045FSJk8DzfKIMx)
