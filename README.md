@@ -17,3 +17,11 @@ make install
 ## Example with .yaml
 
 [![asciicast](https://asciinema.org/a/qiSy5Ckvsl045FSJk8DzfKIMx.svg)](https://asciinema.org/a/qiSy5Ckvsl045FSJk8DzfKIMx)
+
+## Example of deep comparison with .json
+
+[![asciicast](https://asciinema.org/a/51SGspEl4ofVDcmKxXEXX2a1O.svg)](https://asciinema.org/a/51SGspEl4ofVDcmKxXEXX2a1O)
+
+## Example of deep comparison with .yaml
+
+[![asciicast](https://asciinema.org/a/21k1GERWOZZN9XOU59w7PFlAg.svg)](https://asciinema.org/a/21k1GERWOZZN9XOU59w7PFlAg)
