@@ -1,8 +1,8 @@
 import _ from 'lodash';
 import parse from './parsers.js';
-import stylish from './stylish.js';
+import formatter from '../formatters/index.js';
 
-const findDiff = (filepath1, filepath2, formater = stylish) => {
+const findDiff = (filepath1, filepath2, formatName) => {
   const file1 = parse(filepath1);
   const file2 = parse(filepath2);
 
@@ -53,7 +53,7 @@ const findDiff = (filepath1, filepath2, formater = stylish) => {
     return diff;
   };
 
-  return formater(iter(file1, file2));
+  return formatter(formatName)(iter(file1, file2));
 };
 
 export default findDiff;

@@ -50,8 +50,10 @@ const stylish = (diff) => {
               `${indent}${oldValueBar}${name}: ${formatedValue(oldValue)}`,
               `${indent}${newValueBar}${name}: ${formatedValue(newValue)}`,
             ];
-          default:
+          case 'internal-values':
             return `${indent}${notEditedBar}${name}: ${iter(children, depth + 1)}`;
+          default:
+            return null;
         }
       });
 

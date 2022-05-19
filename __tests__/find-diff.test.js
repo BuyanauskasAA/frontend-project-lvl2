@@ -1,4 +1,4 @@
-import { test, expect } from '@jest/globals';
+import { test, expect, describe } from '@jest/globals';
 import { fileURLToPath } from 'url';
 import path from 'path';
 import fs from 'fs';
@@ -16,12 +16,32 @@ const jsonFilepath2 = getFixturePath('file2.json');
 const yamlFilepath1 = getFixturePath('file1.yml');
 const yamlFilepath2 = getFixturePath('file2.yaml');
 
-const expectedFile = readFile('expected_file');
+const expectedFileStylish = readFile('expected-file.stylish-format');
+const expectedFilePlain = readFile('expected-file.plain-format');
 
-test('generate difference .json', () => {
-  expect(findDiff(jsonFilepath1, jsonFilepath2)).toEqual(expectedFile);
+describe("'stylish' output format", () => {
+  test('generate difference .json', () => {
+    expect(findDiff(jsonFilepath1, jsonFilepath2, 'stylish')).toEqual(expectedFileStylish);
+  });
+  test('generate difference .yaml', () => {
+    expect(findDiff(yamlFilepath1, yamlFilepath2, 'stylish')).toEqual(expectedFileStylish);
+  });
 });
 
-test('generate difference .yaml', () => {
-  expect(findDiff(yamlFilepath1, yamlFilepath2)).toEqual(expectedFile);
+describe("'plain' output format", () => {
+  test('generate difference .json', () => {
+    expect(findDiff(jsonFilepath1, jsonFilepath2, 'plain')).toEqual(expectedFilePlain);
+  });
+  test('generate difference .yaml', () => {
+    expect(findDiff(yamlFilepath1, yamlFilepath2, 'plain')).toEqual(expectedFilePlain);
+  });
+});
+
+describe('default output format', () => {
+  test('generate difference .json', () => {
+    expect(findDiff(jsonFilepath1, jsonFilepath2)).toEqual(expectedFileStylish);
+  });
+  test('generate difference .yaml', () => {
+    expect(findDiff(yamlFilepath1, yamlFilepath2)).toEqual(expectedFileStylish);
+  });
 });

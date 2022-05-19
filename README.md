@@ -25,3 +25,7 @@ make install
 ## Example of deep comparison with .yaml
 
 [![asciicast](https://asciinema.org/a/21k1GERWOZZN9XOU59w7PFlAg.svg)](https://asciinema.org/a/21k1GERWOZZN9XOU59w7PFlAg)
+
+## Set up the output format
+
+[![asciicast](https://asciinema.org/a/J7rsZNagPSbmB7I9E8Sl9YrDj.svg)](https://asciinema.org/a/J7rsZNagPSbmB7I9E8Sl9YrDj)
