@@ -18,6 +18,7 @@ const yamlFilepath2 = getFixturePath('file2.yaml');
 
 const expectedFileStylish = readFile('expected-file.stylish-format');
 const expectedFilePlain = readFile('expected-file.plain-format');
+const expectedFileJson = readFile('expected-file.json');
 
 describe("'stylish' output format", () => {
   test('generate difference .json', () => {
@@ -34,6 +35,15 @@ describe("'plain' output format", () => {
   });
   test('generate difference .yaml', () => {
     expect(findDiff(yamlFilepath1, yamlFilepath2, 'plain')).toEqual(expectedFilePlain);
+  });
+});
+
+describe("'json' output format", () => {
+  test('generate difference .json', () => {
+    expect(findDiff(jsonFilepath1, jsonFilepath2, 'json')).toEqual(expectedFileJson);
+  });
+  test('generate difference .yaml', () => {
+    expect(findDiff(yamlFilepath1, yamlFilepath2, 'json')).toEqual(expectedFileJson);
   });
 });
 

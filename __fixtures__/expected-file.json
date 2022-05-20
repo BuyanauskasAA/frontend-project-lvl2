@@ -1,0 +1,120 @@
+{
+  "name": "difference",
+  "status": "internal-values",
+  "children": [
+    {
+      "name": "common",
+      "status": "internal-values",
+      "children": [
+        {
+          "name": "setting1",
+          "status": "not-edited",
+          "value": "Value 1"
+        },
+        {
+          "name": "setting2",
+          "status": "deleted",
+          "value": 200
+        },
+        {
+          "name": "setting3",
+          "status": "edited",
+          "oldValue": true,
+          "newValue": null
+        },
+        {
+          "name": "setting6",
+          "status": "internal-values",
+          "children": [
+            {
+              "name": "key",
+              "status": "not-edited",
+              "value": "value"
+            },
+            {
+              "name": "doge",
+              "status": "internal-values",
+              "children": [
+                {
+                  "name": "wow",
+                  "status": "edited",
+                  "oldValue": "",
+                  "newValue": "so much"
+                }
+              ]
+            },
+            {
+              "name": "ops",
+              "status": "added",
+              "value": "vops"
+            }
+          ]
+        },
+        {
+          "name": "follow",
+          "status": "added",
+          "value": false
+        },
+        {
+          "name": "setting4",
+          "status": "added",
+          "value": "blah blah"
+        },
+        {
+          "name": "setting5",
+          "status": "added",
+          "value": {
+            "key5": "value5"
+          }
+        }
+      ]
+    },
+    {
+      "name": "group1",
+      "status": "internal-values",
+      "children": [
+        {
+          "name": "baz",
+          "status": "edited",
+          "oldValue": "bas",
+          "newValue": "bars"
+        },
+        {
+          "name": "foo",
+          "status": "not-edited",
+          "value": "bar"
+        },
+        {
+          "name": "nest",
+          "status": "edited",
+          "oldValue": {
+            "key": "value"
+          },
+          "newValue": "str"
+        }
+      ]
+    },
+    {
+      "name": "group2",
+      "status": "deleted",
+      "value": {
+        "abc": 12345,
+        "deep": {
+          "id": 45
+        }
+      }
+    },
+    {
+      "name": "group3",
+      "status": "added",
+      "value": {
+        "deep": {
+          "id": {
+            "number": 45
+          }
+        },
+        "fee": 100500
+      }
+    }
+  ]
+}
