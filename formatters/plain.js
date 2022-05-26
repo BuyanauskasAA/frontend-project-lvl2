@@ -23,31 +23,31 @@ const plain = (diff) => {
           children,
         } = element;
 
-        path.push(name);
+        path = path.length > 0 ? `${path}.${name}` : `${name}`;
 
         switch (status) {
           case 'deleted': {
-            const result = `Property '${path.join('.')}' was removed`;
-            path.pop();
+            const result = `Property '${path}' was removed`;
+            path = _.dropRight(path.split('.')).join('.');
             return result;
           }
           case 'added': {
-            const result = `Property '${path.join('.')}' was added with value: ${formatedValue(value)}`;
-            path.pop();
+            const result = `Property '${path}' was added with value: ${formatedValue(value)}`;
+            path = _.dropRight(path.split('.')).join('.');
             return result;
           }
           case 'edited': {
-            const result = `Property '${path.join('.')}' was updated. From ${formatedValue(oldValue)} to ${formatedValue(newValue)}`;
-            path.pop();
+            const result = `Property '${path}' was updated. From ${formatedValue(oldValue)} to ${formatedValue(newValue)}`;
+            path = _.dropRight(path.split('.')).join('.');
             return result;
           }
           case 'not-edited': {
-            path.pop();
+            path = _.dropRight(path.split('.')).join('.');
             return [];
           }
           case 'internal-values': {
             const result = iter(children, path);
-            path.pop();
+            path = _.dropRight(path.split('.')).join('.');
             return result;
           }
           default:
@@ -58,7 +58,7 @@ const plain = (diff) => {
     return lines.join('\n');
   };
 
-  return iter(diff, []);
+  return iter(diff, '');
 };
 
 export default plain;
