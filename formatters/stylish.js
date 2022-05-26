@@ -16,11 +16,8 @@ const formatedValue = (value, depth) => {
   const lines = Object
     .entries(value)
     .map(([key, val]) => `${indent}${space}${key}: ${formatedValue(val, depth + 1)}`);
-  return [
-    '{',
-    ...lines,
-    `${indent}}`,
-  ].join('\n');
+
+  return ['{', ...lines, `${indent}}`].join('\n');
 };
 
 const stylish = (diff) => {
@@ -34,15 +31,14 @@ const stylish = (diff) => {
         const {
           name, status, value, oldValue, newValue, children,
         } = element;
-        const currentValue = formatedValue(value, depth + 1);
 
         switch (status) {
           case 'deleted':
-            return `${indent}${oldValueBar}${name}: ${currentValue}`;
+            return `${indent}${oldValueBar}${name}: ${formatedValue(value, depth + 1)}`;
           case 'added':
-            return `${indent}${newValueBar}${name}: ${currentValue}`;
+            return `${indent}${newValueBar}${name}: ${formatedValue(value, depth + 1)}`;
           case 'not-edited':
-            return `${indent}${notEditedBar}${name}: ${currentValue}`;
+            return `${indent}${notEditedBar}${name}: ${formatedValue(value, depth + 1)}`;
           case 'edited':
             return [
               `${indent}${oldValueBar}${name}: ${formatedValue(oldValue, depth + 1)}`,
@@ -55,11 +51,7 @@ const stylish = (diff) => {
         }
       });
 
-    return [
-      '{',
-      ...lines,
-      `${indent}}`,
-    ].join('\n');
+    return ['{', ...lines, `${indent}}`].join('\n');
   };
 
   return iter(diff, 0);
