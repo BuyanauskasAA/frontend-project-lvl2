@@ -10,7 +10,7 @@ Gendiff can do a deep comparison of [JSON](#example_of_deep_comparison_with_JSON
 
 In Gendiff you can setup the output format:
   - [Stylish format](#example_with_format_stylish). Gendiff uses this format by default.
-  - [Plain format](#example_with_format_plain)
+  - [Plain format](#example_with_format_plain).
   - [JSON format](#example_with_format_json). Use this format to get difference in JSON format.
 
 ## Setup
