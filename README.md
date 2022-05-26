@@ -9,9 +9,9 @@ Gendiff compares two files in [JSON](#example_with_JSON) of [YAML](#example_with
 Gendiff can do a deep comparison of [JSON](#example_of_deep_comparison_with_JSON) and [YAML](#example_of_deep_comparison_with_YAML) formates.
 
 In Gendiff you can setup the output format:
-  - [Stylish format](#example_with_format_stylish)
+  - [Stylish format](#example_with_format_stylish). Gendiff uses this format by default.
   - [Plain format](#example_with_format_plain)
-  - [JSON format](#example_with_format_json)
+  - [JSON format](#example_with_format_json). Use this format to get difference in JSON format.
 
 ## Setup
 
@@ -35,15 +35,15 @@ make install
 
 [![asciicast](https://asciinema.org/a/fBWhpysqO3DX8KfzW91FgGyxA.svg)](https://asciinema.org/a/fBWhpysqO3DX8KfzW91FgGyxA)
 
-## Example with '--format stylish'. Gendiff uses this format by default.
+## Example with '--format stylish'
 
 [![asciicast](https://asciinema.org/a/Xc1RAeq9Bjz18brPxwMF3aFUr.svg)](https://asciinema.org/a/Xc1RAeq9Bjz18brPxwMF3aFUr)
 
-## Example with '--format plain'.
+## Example with '--format plain'
 
 [![asciicast](https://asciinema.org/a/r6c9hCewPNbE2kMtYOGkhf67g.svg)](https://asciinema.org/a/r6c9hCewPNbE2kMtYOGkhf67g)
 
-## Example with '--format json'. Use this format to get difference in JSON format.
+## Example with '--format json'
 
 [![asciicast](https://asciinema.org/a/wqDz1arGbjOepWYrYBvxtrH3P.svg)](https://asciinema.org/a/wqDz1arGbjOepWYrYBvxtrH3P)
 
