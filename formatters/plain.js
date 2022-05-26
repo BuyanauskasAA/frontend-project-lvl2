@@ -1,28 +1,22 @@
 import _ from 'lodash';
 
-const plain = (diff) => {
-  const formatedValue = (currentValue) => {
-    if (_.isObject(currentValue)) {
-      return '[complex value]';
-    }
-    if (_.isString(currentValue)) {
-      return `'${currentValue}'`;
-    }
-    return currentValue;
-  };
+const formatedValue = (value) => {
+  if (_.isObject(value)) {
+    return '[complex value]';
+  }
+  if (_.isString(value)) {
+    return `'${value}'`;
+  }
+  return value;
+};
 
+const plain = (diff) => {
   const iter = (elements, path) => {
     const lines = _.sortBy(elements, ((element) => element.name))
       .flatMap((element) => {
         const {
-          name,
-          status,
-          value,
-          oldValue,
-          newValue,
-          children,
+          name, status, value, oldValue, newValue, children,
         } = element;
-
         const currentPath = (path.length > 0) ? `${path}.${name}` : `${name}`;
 
         switch (status) {
