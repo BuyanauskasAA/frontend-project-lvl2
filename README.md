@@ -7,7 +7,7 @@
 Gendiff compares two files in [JSON](#example_with_JSON) of [YAML](#example_with_YAML) formate. 
 Gendiff can do a deep comparison of [JSON](#example_of_deep_comparison_with_JSON) and [YAML](#example_of_deep_comparison_with_YAML) formates. 
 In Gendiff you can setup the output format:
-  - [stylish](#example_with_'--format stylish')
+  - [stylish](#example_with_'--format stylish'._Gendiff_uses_this_format_by_default.)
   - [plain](#example_with_'--format plain')
   - [json](#Example_with_'--format json')
 
