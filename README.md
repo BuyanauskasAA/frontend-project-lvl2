@@ -11,7 +11,7 @@ Gendiff compares two files in [Example with JSON](JSON) of YAML formate.
 make install
 ```
 
-## Example with .json
+## Example with JSON
 
 [![asciicast](https://asciinema.org/a/BzBZhKHhtQDy9XDz8iN9T2p90.svg)](https://asciinema.org/a/BzBZhKHhtQDy9XDz8iN9T2p90)
 
