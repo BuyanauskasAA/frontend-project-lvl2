@@ -20,12 +20,23 @@ make install
 
 ## Example of deep comparison with .json
 
-[![asciicast](https://asciinema.org/a/51SGspEl4ofVDcmKxXEXX2a1O.svg)](https://asciinema.org/a/51SGspEl4ofVDcmKxXEXX2a1O)
+[![asciicast](https://asciinema.org/a/wIICcRs0CHZpE6SVKpIcJ5Iqi.svg)](https://asciinema.org/a/wIICcRs0CHZpE6SVKpIcJ5Iqi)
 
 ## Example of deep comparison with .yaml
 
-[![asciicast](https://asciinema.org/a/21k1GERWOZZN9XOU59w7PFlAg.svg)](https://asciinema.org/a/21k1GERWOZZN9XOU59w7PFlAg)
+[![asciicast](https://asciinema.org/a/fBWhpysqO3DX8KfzW91FgGyxA.svg)](https://asciinema.org/a/fBWhpysqO3DX8KfzW91FgGyxA)
 
-## Set up the output format
+## Setup the output format.
+### Example with --format stylish. Gendiff uses this format by default.
 
-[![asciicast](https://asciinema.org/a/J7rsZNagPSbmB7I9E8Sl9YrDj.svg)](https://asciinema.org/a/J7rsZNagPSbmB7I9E8Sl9YrDj)
+[![asciicast](https://asciinema.org/a/Xc1RAeq9Bjz18brPxwMF3aFUr.svg)](https://asciinema.org/a/Xc1RAeq9Bjz18brPxwMF3aFUr)
+
+### Example with --format plain.
+
+[![asciicast](https://asciinema.org/a/r6c9hCewPNbE2kMtYOGkhf67g.svg)](https://asciinema.org/a/r6c9hCewPNbE2kMtYOGkhf67g)
+
+### Example with --format json. Use this format to get difference in json format.
+
+[![asciicast](https://asciinema.org/a/wqDz1arGbjOepWYrYBvxtrH3P.svg)](https://asciinema.org/a/wqDz1arGbjOepWYrYBvxtrH3P)
+
+
