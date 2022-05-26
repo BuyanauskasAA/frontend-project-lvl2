@@ -4,7 +4,13 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/97bb01d1de371699da3a/maintainability)](https://codeclimate.com/github/BuyanauskasAA/frontend-project-lvl2/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/97bb01d1de371699da3a/test_coverage)](https://codeclimate.com/github/BuyanauskasAA/frontend-project-lvl2/test_coverage)
 
-Gendiff compares two files in [Example with JSON](JSON) of YAML formate. 
+Gendiff compares two files in [JSON](Example with JSON) of [YAML](Example with YAML) formate. 
+Gendiff can do a deep comparison of [JSON](Example of deep comparison with JSON) and [YAML](Example of deep comparison with YAML) formates. 
+In Gendiff you can setup the output format:
+  - [stylish](Example with '--format stylish'. Gendiff uses this format by default.)
+  - [plain](Example with '--format plain'.)
+  - [json](Example with '--format json'. Use this format to get difference in JSON format.)
+
 ## Setup
 
 ```sh
@@ -15,28 +21,27 @@ make install
 
 [![asciicast](https://asciinema.org/a/BzBZhKHhtQDy9XDz8iN9T2p90.svg)](https://asciinema.org/a/BzBZhKHhtQDy9XDz8iN9T2p90)
 
-## Example with .yaml
+## Example with YAML
 
 [![asciicast](https://asciinema.org/a/qiSy5Ckvsl045FSJk8DzfKIMx.svg)](https://asciinema.org/a/qiSy5Ckvsl045FSJk8DzfKIMx)
 
-## Example of deep comparison with .json
+## Example of deep comparison with JSON
 
 [![asciicast](https://asciinema.org/a/wIICcRs0CHZpE6SVKpIcJ5Iqi.svg)](https://asciinema.org/a/wIICcRs0CHZpE6SVKpIcJ5Iqi)
 
-## Example of deep comparison with .yaml
+## Example of deep comparison with YAML
 
 [![asciicast](https://asciinema.org/a/fBWhpysqO3DX8KfzW91FgGyxA.svg)](https://asciinema.org/a/fBWhpysqO3DX8KfzW91FgGyxA)
 
-## Setup the output format.
-### Example with --format stylish. Gendiff uses this format by default.
+## Example with '--format stylish'. Gendiff uses this format by default.
 
 [![asciicast](https://asciinema.org/a/Xc1RAeq9Bjz18brPxwMF3aFUr.svg)](https://asciinema.org/a/Xc1RAeq9Bjz18brPxwMF3aFUr)
 
-### Example with --format plain.
+## Example with '--format plain'.
 
 [![asciicast](https://asciinema.org/a/r6c9hCewPNbE2kMtYOGkhf67g.svg)](https://asciinema.org/a/r6c9hCewPNbE2kMtYOGkhf67g)
 
-### Example with --format json. Use this format to get difference in json format.
+## Example with '--format json'. Use this format to get difference in JSON format.
 
 [![asciicast](https://asciinema.org/a/wqDz1arGbjOepWYrYBvxtrH3P.svg)](https://asciinema.org/a/wqDz1arGbjOepWYrYBvxtrH3P)
 
