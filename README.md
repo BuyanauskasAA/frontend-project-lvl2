@@ -4,7 +4,7 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/97bb01d1de371699da3a/maintainability)](https://codeclimate.com/github/BuyanauskasAA/frontend-project-lvl2/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/97bb01d1de371699da3a/test_coverage)](https://codeclimate.com/github/BuyanauskasAA/frontend-project-lvl2/test_coverage)
 
-Gendiff compares two files in [JSON](#Example with JSON) of [YAML](#Example with YAML) formate. 
+Gendiff compares two files in [JSON](#example-with-JSON) of [YAML](#Example with YAML) formate. 
 Gendiff can do a deep comparison of [JSON](#Example of deep comparison with JSON) and [YAML](#Example of deep comparison with YAML) formates. 
 In Gendiff you can setup the output format:
   - [stylish](#Example with '--format stylish'. Gendiff uses this format by default.)
